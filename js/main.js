@@ -31,4 +31,7 @@ function getExercise() {
     document.querySelector('h2').innerHTML = data.results[index].name
     document.querySelector('h3').innerHTML = data.results[index].description
   })
+  .catch(err => {
+    console.log(`error ${err}`)
+  })
 }
